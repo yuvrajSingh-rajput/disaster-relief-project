@@ -1,43 +1,73 @@
-# 🌍 Disaster Relief project
+# 🌍 Disaster Relief & Resource Coordination Hub
 
-A centralized platform built to assist in disaster management by connecting affected individuals with NGOs, volunteers, and administrators. This application ensures real-time updates, resource distribution, and efficient coordination in times of crisis.
+A centralized platform designed to assist in disaster management by connecting affected individuals with NGOs, volunteers, and administrators. This India-focused application ensures **real-time updates**, **resource coordination**, and **efficient collaboration** in times of natural crises.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 **Role-Based Access:**
-  - **Admin:** Manages platform data, approves NGOs/volunteers, and oversees operations.
-  - **Volunteer:** Offers help, manages resource distribution, and updates field reports.
-  - **NGO:** Provides support services (food, shelter, first-aid), updates availability.
-  - **Affected Individual:** Requests help, views safe areas, receives assistance.
+### 🔐 Role-Based Access
+- **Admin**
+  - Approves and verifies NGOs and Volunteers
+  - Manages disasters, safe zones, and overall operations
+- **NGO**
+  - Provides shelter, food, medical assistance
+  - Updates real-time availability and resources
+- **Volunteer**
+  - Accepts help requests
+  - Updates live location and rescue status
+- **Affected Individual**
+  - Requests urgent help (food, shelter, medical)
+  - Tracks rescue updates and nearby helpers
 
-- 🗺️ **Real-Time Area Updates:**
-  - Live tracking of affected and safe zones.
-  - Map-based visualization for quick decision-making.
+### 🗺️ Real-Time Area Updates
+- Live **map-based visualization** of:
+  - Affected areas
+  - Safe zones
+  - Ongoing rescue efforts
 
-- 🍱 **Resource Allocation:**
-  - Request and supply food, shelter, first-aid, and other essential items.
-  - Status tracking of resources and distribution.
+### 🆘 Help & Resource Management
+- Request and supply:
+  - 🛏️ Shelter
+  - 🍱 Food
+  - 🩹 First-aid
+  - 🚰 Water and other essentials
+- Track resource availability and delivery status
 
-- 📢 **Notifications & Alerts:**
-  - Timely alerts for new disasters, changing conditions, or help availability.
+### 📡 Real-Time Tracking
+- NGOs and volunteers show live location on the map
+- Affected users can track helpers after request approval
+- Display how many people each NGO/volunteer has rescued
+
+### 🔔 Notifications & Alerts
+- Real-time alerts for:
+  - New disasters
+  - Weather changes
+  - Nearby help availability
+
+### 📰 News & Best Practices
+- **City-specific disaster news** via APIs
+- Tips and verified strategies for:
+  - Mitigation
+  - Preparedness
+  - Relief operations
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology     | Description                                         |
-|----------------|-----------------------------------------------------|
-| **ReactJS**    | Frontend library for building user interfaces       |
-| **TypeScript** | Adds static typing to JavaScript for safer coding   |
-| **Firebase**   | Backend services including Auth, Firestore, Hosting, and Realtime Database |
+| Technology     | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| **ReactJS**    | Frontend library for building a dynamic user interface                      |
+| **TypeScript** | Adds type safety for robust and maintainable frontend code                  |
+| **Firebase**   | Handles backend services (Authentication, Firestore DB, Hosting, Realtime DB) |
+| **Mapbox / Leaflet** | Geolocation API for live maps and user location tracking             |
 
 ---
 
 ## 📸 Screenshots
 
-> *(Add relevant screenshots here, e.g., login page, dashboard, resource request form, etc.)*
+> *(Include screenshots like Login, Dashboard, Help Request, NGO Tracking Map, Resource Panel, etc.)*
 
 ---
 
@@ -47,11 +77,11 @@ A centralized platform built to assist in disaster management by connecting affe
 # Clone the repository
 git clone https://github.com/your-username/disaster-relief-app.git
 
-# Navigate to project directory
+# Navigate into the project folder
 cd disaster-relief-app
 
-# Install dependencies
+# Install frontend dependencies
 npm install
 
 # Start the development server
-npm start
+npm run dev
