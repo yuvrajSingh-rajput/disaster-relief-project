@@ -1,10 +1,9 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { ArrowRight, Bell } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const navigate = useNavigate();
   return (
     <div className="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
       <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -19,16 +18,19 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <Button onClick={() => {
-              navigate("/request-help")
-            }} size="lg" className="bg-emergency hover:bg-emergency/90 text-white">
+            <Button size="lg" className="bg-emergency hover:bg-emergency/90 text-white">
               I Need Help
             </Button>
-            <Button onClick={() => {
-              navigate("/volunteer")
-            }} size="lg" variant="outline" className="bg-info/10 border-info/50 text-white hover:bg-info/20">
+            <Button size="lg" variant="outline" className="bg-info/10 border-info/50 text-white hover:bg-info/20">
               I Want To Help <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
+          </div>
+          
+          <div className="mt-4 text-center">
+            <Link to="/#alerts" className="inline-flex items-center text-sm text-white/80 hover:text-white transition">
+              <Bell className="h-4 w-4 mr-1 animate-pulse" />
+              <span className="underline">Enable disaster alerts without login</span>
+            </Link>
           </div>
           
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
