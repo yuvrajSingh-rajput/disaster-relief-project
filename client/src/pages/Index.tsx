@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,6 +10,7 @@ import RecentRequests from "@/components/RecentRequests";
 import DisasterNewsSection from "@/components/DisasterNewsSection";
 import WeatherAlerts from "@/components/WeatherAlerts";
 import EvacuationRoutes from "@/components/EvacuationRoutes";
+import DisasterAlertsOptIn from "@/components/DisasterAlertsOptIn";
 import { Link } from "react-router-dom";
 import { AlertCircle, ArrowRight, Bell, MapPin } from "lucide-react";
 
@@ -87,6 +89,11 @@ const Index = () => {
                   </Link>
                 </CardFooter>
               </Card>
+            </div>
+            
+            {/* Add Disaster Alerts Opt-In Component */}
+            <div className="mb-12">
+              <DisasterAlertsOptIn />
             </div>
             
             <div className="text-center mb-12">
