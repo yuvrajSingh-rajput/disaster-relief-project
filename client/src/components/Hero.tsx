@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Bell } from "lucide-react";
 import { Link } from "react-router-dom";
 import OneTapRequest from "@/components/OneTapRequest";
+import OfflineEmergencyOptions from "@/components/OfflineEmergencyOptions";
 
 const Hero = () => {
   return (
@@ -20,6 +21,11 @@ const Hero = () => {
           {/* One-Tap Request System */}
           <div className="mb-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <OneTapRequest />
+          </div>
+          
+          {/* Offline Emergency Options */}
+          <div className="mb-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <OfflineEmergencyOptions />
           </div>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
