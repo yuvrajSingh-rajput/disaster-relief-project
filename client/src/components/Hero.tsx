@@ -1,7 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Bell } from "lucide-react";
 import { Link } from "react-router-dom";
+import OneTapRequest from "@/components/OneTapRequest";
 
 const Hero = () => {
   return (
@@ -16,6 +16,11 @@ const Hero = () => {
             Connecting disaster-affected individuals with immediate help from NGOs and volunteers. 
             Save lives through real-time coordination and rapid response.
           </p>
+          
+          {/* One-Tap Request System */}
+          <div className="mb-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <OneTapRequest />
+          </div>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <Button size="lg" className="bg-emergency hover:bg-emergency/90 text-white">
